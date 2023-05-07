@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cao div{
+            width: 110px;
+            height: 140px;
+            margin-right: 10px;
+            overflow:hidden ;
+            float: left;
+        }
+        .one{
+            background-image: url(../photo/Sprite-Sheet.jpg);
+            animation: luoke1 500ms infinite steps(4);
+        }
+        .two{
+            margin-left: 100px;
+            margin-top: 180px;
+            background-image: url(../photo/Sprite-Sheet.jpg);
+            animation: luoke2 300ms infinite steps(4);
+        }
+
+        .three{
+            margin-left: 500px;
+            margin-top: 180px;
+            background-image: url(../photo/Sprite-Sheet.jpg);
+            animation: luoke2 50ms infinite steps(4);
+        }
+
+        @keyframes luoke1 {
+            0%{
+                background-position: -26px 0;
+            }
+            100%{
+                background-position: -512px 0;
+            }
+        }
+
+        @keyframes luoke2 {
+            0%{
+                background-position: -26px -140px;
+            }
+            100%{
+                background-position: -512px -140px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cao">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>
